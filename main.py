@@ -23,6 +23,22 @@ if __name__ == '__main__':
         f.close()
 
         codes = codes.replace('Courier', '메이플스토리')
+        codes = codes.replace('Arial, Helvetica, sans-serif', '메이플스토리')
+
+        f = open(newPath, 'w', encoding='UTF-8')
+        f.write(codes)
+        f.close()
+        shutil.move(newPath, originalPath)
+
+        # 폰트변경
+        originalPath = '.\\resources\\app\\.webpack\\renderer\\vendors.bundle.js'
+        newPath = '.\\resources\\app\\.webpack\\renderer\\vendors.bundle.js.new'
+        f = open(originalPath, 'r', encoding='UTF8')
+        originalCodes = f.read()
+        codes = originalCodes
+        f.close()
+
+        codes = codes.replace('Courier', '메이플스토리')
 
         f = open(newPath, 'w', encoding='UTF-8')
         f.write(codes)
