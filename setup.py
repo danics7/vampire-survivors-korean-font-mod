@@ -13,9 +13,9 @@ setup(
             "icon_resources": [(1, "0.ico")],
             "dest_base": "Vampire Survivors 한글 폰트 모드",
             "name": "Vampire Survivors 한글 폰트 모드",
-            "version": "0.2.12.0"
+            "version": "1.0.0"
         }],
-    version='0.2.12.0',
+    version='1.0.0',
     name='Vampire Survivors 한글 폰트 모드',
     description='Vampire Survivors 한글 폰트 모드',
     author='danics'
